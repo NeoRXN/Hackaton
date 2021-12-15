@@ -1,0 +1,7 @@
+.homeFooter {
+    display: flex;
+    justify-content: space-around;
+    background-color: #CA7D1C ;
+    color: white;
+    box-shadow: 0 -5px 6px -3px black;
+  }

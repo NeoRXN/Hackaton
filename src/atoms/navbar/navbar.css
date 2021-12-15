@@ -1,0 +1,24 @@
+.homeNavbar {
+    background-color: #CA7D1C;
+    color: black;
+}
+
+.textMenuDesktop {
+    color: black;
+    text-decoration: none;
+    margin: 10px;;
+    
+}
+
+.textMenuMobile{
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.boxMenuDesktop{
+    width: 80%;
+    justify-content: flex-end;
+}
