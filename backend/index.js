@@ -17,6 +17,7 @@ const PORT = process.env.PORT || 4000;
 
 //Importar rutas 
 app.use('/api/recicladores', require('./routes/recicladores'));
+app.use('/api/auth', require('./routes/auth'));
 
 
 // arrancar el servidor 

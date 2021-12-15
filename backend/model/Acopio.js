@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const RecicladoresSchema = mongoose.Schema({
+const AcopioSchema = mongoose.Schema({
   nombre: {
     type: String,
     required: true,
@@ -60,10 +60,16 @@ const RecicladoresSchema = mongoose.Schema({
     trim: true,
   },
 
+  personalRecolector: {
+    type: String,
+    required: true,
+    trim: true,
+  },
+
   registro: {
     type: Date,
     default: Date.now(),
   },
 });
 
-module.exports = mongoose.model('Recicladores', RecicladoresSchema);
+module.exports = mongoose.model('Acopio', AcopioSchema);
