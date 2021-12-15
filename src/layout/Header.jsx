@@ -11,14 +11,14 @@ export default function Header() {
                 <img src={logo} alt="logo"/>
                 <h1>SHARC</h1>
             </div>
-            <div className="usuario ">
+            <div className="usuario flex">
                 <div className="logoUsuario flex">
-                    <UilUserCircle size="140px" color="#B98CF2"/>
+                    <UilUserCircle size="100px" color="#B98CF2"/>
                     <h2 className="nombreUsuario">Nombre de usuario</h2>
                 </div>
                 <div>
-                    {/* <Link to={'/'}><button className="cerrarSesion">Volver al inicio</button></Link>
-                    <Link to={'/'}><button className="cerrarSesion">Como reciclar</button></Link> */}
+                    <Link to={'/'}><button className="cerrarSesion">Volver al inicio</button></Link>
+                    <Link to={'/information'}><button className="cerrarSesion">¿Como reciclar?</button></Link>
                     <button className="cerrarSesion">cerrar sesión</button>
                 </div>
             </div>

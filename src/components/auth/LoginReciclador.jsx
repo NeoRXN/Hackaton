@@ -22,7 +22,7 @@ export default function LoginReciclador() {
                     <label htmlFor="password">contraseña</label>
                     <input className="LRInput" type="text" name="password" id="password"/>
 
-                    <button className="LRBtn">Iniciar sesión</button>
+                    <Link to={'/reciclador'}><button className="LGBtn">Iniciar sesión</button></Link>
                     </form>
                 </section>
 

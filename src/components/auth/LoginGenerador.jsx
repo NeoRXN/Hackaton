@@ -22,7 +22,7 @@ export default function LoginGenerador() {
                     <label htmlFor="password">contraseña</label>
                     <input className="LGInput" type="text" name="password" id="password"/>
 
-                    <button className="LGBtn">Iniciar sesión</button>
+                    <Link to={'/generador'}><button className="LGBtn">Iniciar sesión</button></Link>
                     </form>
                 </section>
 
