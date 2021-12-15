@@ -7,7 +7,7 @@ import '../../css/generadores.css';
 
 export default function Generadores() {
     return (
-        <Fragment>
+        <Fragment className="body">
             <Header/>
             <main className='main container grid'>
                 <DireccionProductos/>

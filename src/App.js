@@ -7,7 +7,8 @@ import LoginGenerador from './components/auth/LoginGenerador';
 import RegistroGenerador from './components/auth/RegistroGenerador';
 import LoginReciclador from './components/auth/LoginReciclador';
 import RegistroReciclador from './components/auth/RegistroReciclador';
-
+import Home from './components/home'
+import Information from './components/information'
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
             <Route path="registroreciclador" element={<RegistroReciclador/>}/>
             <Route path="reciclador" element={<Reciclador/>}/>
             <Route path="generador" element={<Generadores/>}/>
+            <Route path="/" element={<Home/>} exact/>
+            <Route path="/information" element={<Information/>}/>
           </Routes>
       </Router>
     </GeneradoresState>

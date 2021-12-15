@@ -1,0 +1,25 @@
+.imgInformationR {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.imgInfoR {
+    grid-column: 4/6;
+    grid-row: 1;
+    display: flex;
+}
+
+.txtInformationR {
+    grid-column: 2/4;
+    grid-row: 1;
+    text-align: justify;
+}
+
+.imgR {
+    border-radius: 5px;
+    margin: auto;
+}
