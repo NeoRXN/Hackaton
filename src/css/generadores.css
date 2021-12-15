@@ -1,0 +1,312 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    --header-height: 3rem;
+
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    /* --hue-color: 5; Purple 250 - Green 142 - Blue 230 - Pink 340 */
+
+    /* HSL color mode */
+    --first-color: #B98CF2;
+    --second-color: #d4d4d4;
+    --title-text-color: rgb(255,255,255,100%);
+    --text-color: rgb(0, 0, 0);
+
+
+    /*========== Font and typography ==========*/
+    --text-font: 'Roboto', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-ligth: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 600;
+    --font-black: 900;
+
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/*==================== BASE ====================*/
+/* (reiniciar el html y dar formato base a todo)*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: var(--text-font);
+    background-color: var(--second-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+textarea{
+    -webkit-appearance:none;
+    border-radius: 10px;
+    border: .5px solid black;
+    padding: 8px;
+    
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.titulo{
+    color: var(--title-text-color);
+    font-weight: var(--font-medium);
+    background-color: var(--first-color);
+    padding: .3rem .5rem;
+    font-weight: var(--font-regular);
+    font-size: 24px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: solid .5px black;
+}
+
+.input{
+    -webkit-appearance:none;
+    border-radius: 10px;
+    border: .5px solid black;
+    padding: 8px;
+}
+
+.input::placeholder{
+    font-family: var(--text-font);
+}
+
+/*==================== LAYOUT ====================*/
+/* (Definir el diseño de la plantilla con contenedores y grid) */
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    gap: 1rem;
+}
+
+/*==================== HEADER ====================*/
+.header{
+    justify-content: space-between;
+    padding: .5rem 5rem 0 10rem;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 2rem;
+}
+.logo h1{
+    font-size: 44px;
+}
+.logo{
+    align-items: center;
+    gap: 2rem;
+}
+.logo img{
+    width:140px;
+    height: auto;
+}
+.usuario h2{
+    font-size: 36px;
+    font-weight: var(--font-regular);
+    align-self: center;
+}
+
+.usuario i{
+    color: var(--first-color);
+    font-size: 100px;
+}
+
+.usuario button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 13rem;
+}
+
+/*==================== MAIN ====================*/
+main{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*==================== izquierdo ====================*/
+.izquierdo{
+    background-color: white;
+    border-radius: 10px;
+    border: solid .5px  black;
+}
+
+.direccion{
+    margin: 2rem;
+    border: solid .5px  black;
+    border-radius: 10px;
+}
+
+.direccionForm{
+    flex-direction: column;
+    padding: 1rem;
+    align-items: space-between;
+}
+
+.producto{
+    margin: 2rem;
+    border: solid .5px  black;
+    border-radius: 10px;
+}
+
+.productoForm{
+    padding: 1rem;
+    flex-direction: column;
+
+}
+
+.inputFile{
+    flex-direction: column;
+    color:var(--first-color);
+    align-items: center;
+    border: solid .5px  black;
+    gap: 0;
+}
+
+.inputFile input{
+    display: none;
+}
+
+/*==================== Derecho ====================*/
+
+.mapa{
+    
+    border: solid .5px  black;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.costo{
+    
+    border: solid .5px  black;
+    border-radius: 10px;
+    background-color: white;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.info, .valor{
+    padding: 1rem;
+
+}
+
+.info span{
+    content: 'Base x Altura';
+    margin-left: 20px;
+    border: solid .5px  black;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: .5;
+    width: 50%;
+    height: 40px;
+} 
+.valor{
+    width: 100%;
+    /* justify-content: center; */
+}
+
+.valor span{
+    width: 60%;
+    content: 'Base x Altura';
+    margin-left: 10%;
+    border: solid .5px  black;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: .5;
+} 
+.botones{
+    justify-content: center;
+    margin: 0 0 10px 15%;
+    padding: 0 .5rem;
+}
+.solicitar{
+    border-radius: 10px;
+    border: solid .5px  black;
+    width: 60%;
+    background-color: var(--first-color);
+    color: white;
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.confirmar, .cancelar{
+    border-radius: 10px;
+    border: solid .5px  black;
+    width: 50%;
+    background-color: var(--first-color);
+    color: white;
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+/*==================== FOOTER ====================*/
+footer{
+    margin-top: 1rem;
+    background-color: white;
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+}
+
+.footer{
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.footer img{
+    width: 90px;
+    height: auto;
+}
