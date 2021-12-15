@@ -3,9 +3,9 @@ import React from 'react'
 const BodyContact = () => {
     const content = [
         'Dirección: calle siempre viva',
-        'Telefono: 34234234',
+        'Teléfono: 34234234',
         'Email: sharc@gmail.com',
-        'Ciudad: Medellin'
+        'Ciudad: Medellín'
       ]
     return (
         <div className=''>

@@ -1,16 +1,20 @@
 import React from 'react';
 import CardImg from '../../atoms/cardImg';
 import './bannerImg.css'
+import img1 from '../../images/Acopio.jpg'
+import img2 from '../../images/Clasificacion.jpg'
+import img4 from '../../images/Separacion.jpg'
+import img3 from '../../images/Importanciareciclar.jpg'
 
 const BannerImg = () => {
   const images = [
-      {origin:'https://pbs.twimg.com/media/EYQMXo8XQAAIP5T.jpg',
+      {origin:img1,
       className:'img1'},
-      {origin:'https://pbs.twimg.com/media/EYQMXo8XQAAIP5T.jpg',
+      {origin:img2,
       className:'img2'},
-      {origin:'https://pbs.twimg.com/media/EYQMXo8XQAAIP5T.jpg',
+      {origin:img3,
       className:'img3'},
-      {origin:'https://pbs.twimg.com/media/EYQMXo8XQAAIP5T.jpg',
+      {origin:img4,
       className:'img4'},
   ]
 
