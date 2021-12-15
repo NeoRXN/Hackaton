@@ -1,0 +1,28 @@
+.cardGoSesion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(151, 149, 149, 0.253);
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1.5px grey;
+}
+
+.cardButton{
+    min-width: 100px;
+    padding-right: 1rem;
+}
+
+.cardInfo {
+    width: 70%;
+}
+
+.buttonSesion{
+    background-color:#8D53C4 ;
+    border-radius: 5%;
+    border: solid 2px #8D53C4 ;
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+}
