@@ -66,10 +66,10 @@ html{
     overflow-x: hidden;
 }
 
-body{
+.body{
     font-family: var(--text-font);
     background-color: var(--second-color);
-
+    height: 100vh;
 }
 
 ul{

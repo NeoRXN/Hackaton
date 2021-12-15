@@ -3,10 +3,10 @@ import './copyRight.css'
 
 const CopyRight = () => {
     return (
-        <div>
+        <div className='containerCopy'>
             <p className='copyRight'>
-						{' '}
-						© COPYRIGHT 2021 - Todos los derechos Reservados
+				{' '}
+				© COPYRIGHT 2021 - Todos los derechos Reservados
 			</p>
         </div>
     )
