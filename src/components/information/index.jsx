@@ -1,11 +1,20 @@
 import React from 'react';
 import Navbar from '../../atoms/navbar'
+import ContainerInformation from '../../molecules/containerInformation';
+import './information.css'
+import Title from '../../atoms/title'
+import Footer from '../../molecules/Footer'
+import CopyRight from '../../atoms/copyRight';
 
 const Information = () => {
   return (
-    <div>
+    <div className='informationPage'>
       <Navbar/>
-      <h2>soy muy linda</h2>
+      <Title
+      title='¿Cómo Reciclar?' />
+      <ContainerInformation/>
+      <Footer/>
+      <CopyRight/>
     </div>
   );
 }

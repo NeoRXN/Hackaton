@@ -1,9 +1,9 @@
 import React from 'react'
 import {BrowserRouter,Routes, Route} from "react-router-dom";
-import Home from '../components/home'
-import Information from '../components/information';
+import Home from './components/home'
+import Information from './components/information';
 
-const Pages = () => {
+function App() {
     return (
         <BrowserRouter>
             <Routes>
@@ -16,4 +16,4 @@ const Pages = () => {
     )
 }
 
-export default Pages;
+export default App;

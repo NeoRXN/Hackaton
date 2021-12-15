@@ -1,23 +1,26 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import './carousel.css'
+import imgBanner1 from '../../images/Banner1.png'
+import imgBanner2 from '../../images/Banner2.png'
+import imgBanner3 from '../../images/Banner3.png'
 
 const Carousell =(props) =>{
     const items = [
         {
             name: 'Aya Bouchiha',
             text: 'dddddddddddddddddddddddddddd',
-            description: 'https://ugc.kn3.net/i/origin/http://2.bp.blogspot.com/-z8SQGvfAdYw/UCaeMYyC4dI/AAAAAAAAF8w/yj8AN3waQig/s1600/perritos+tiernos+5%255B1%255D.jpg',
+            description: imgBanner1,
         },
         {
             name: 'John Doe',
             text: 'dddddddddddddddddddddddddddd',
-            description: 'https://s3-eu-west-1.amazonaws.com/barkibu-blog/blog+images/Trato+a+mi+perro+como+un+beb%C3%A9%2C+%C2%BFes+malo+para+%C3%A9l%3F/bebe3.jpg',
+            description: imgBanner2
         },
         {
             name: 'Pitsu Coma',
             text: 'dddddddddddddddddddddddddddd',
-            description: 'https://s3-eu-west-1.amazonaws.com/barkibu-blog/blog+images/Trato+a+mi+perro+como+un+beb%C3%A9%2C+%C2%BFes+malo+para+%C3%A9l%3F/bebe3.jpg',
+            description: imgBanner3,
         },
     ];
 

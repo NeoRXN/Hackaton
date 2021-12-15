@@ -1,29 +1,28 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
 // import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 // import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import Logo from '../../images/Sharc.png'
-import {Link} from 'react-router-dom'
+import MenuItem from "@mui/material/MenuItem";
+import Logo from "../../images/Sharc.png";
+import { Link } from "react-router-dom";
 
-import './navbar.css'
+import "./navbar.css";
 
 const pages = [
-  {name:'Home', href:'/#'}, 
-  {name:'¿Como Reciclar?' , href:'/information'}
+  { name: "Home", href: "/#" },
+  { name: "¿Cómo Reciclar?", href: "/information" },
 ];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 // home, ¿como reciclar? nombre menu
 const Navbar = () => {
-  
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -38,95 +37,92 @@ const Navbar = () => {
     setAnchorElNav(null);
   };
 
-//  const handleCloseUserMenu = () => {
-//    setAnchorElUser(null);
-//  };
+  //  const handleCloseUserMenu = () => {
+  //    setAnchorElUser(null);
+  //  };
 
-   return (
-     <AppBar position="fixed">
-       <Container maxWidth="xl" className='homeNavbar'>
-         <Toolbar disableGutters>
-           {/* logo desktop */}
-           <Typography
-             variant="h5"
-             noWrap
-             component="div"
-             className='navLogo'
-             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}>
-             <img src={Logo} alt='logo' width={'30px'}></img>
-             <b>SHARC</b>
-           </Typography>
-           {/* menu mobile */}
-           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-             <IconButton
-               size="large"
-               aria-label="account of current user"
-               aria-controls="menu-appbar"
-               aria-haspopup="true"
-               onClick={handleOpenNavMenu}
-               color="inherit"
-             >
-               <MenuIcon />
-             </IconButton>
-             <Menu
-               id="menu-appbar"
-               anchorEl={anchorElNav}
-               anchorOrigin={{
-                 vertical: 'bottom',
-                 horizontal: 'left',
-               }}
-               keepMounted
-               transformOrigin={{
-                 vertical: 'top',
-                 horizontal: 'rigth',
-               }}
-               open={Boolean(anchorElNav)}
-               onClose={handleCloseNavMenu}
-               sx={{
-                 display: { xs: 'block', md: 'none' },
-               }}
-             >
-               {pages.map((page) => (
-                 <Link to={page.href}
-                 key={page.name}
-                 className='textMenuMobile'
-               >
-                 {page.name}
-               </Link>
-               ))}
-             </Menu>
-           </Box>
+  return (
+    <AppBar position="fixed">
+      <Container maxWidth="xl" className="homeNavbar">
+        <Toolbar disableGutters>
+          {/* logo desktop */}
+          <Typography
+            variant="h5"
+            noWrap
+            component="div"
+            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+          >
+            <img src={Logo} alt="logo" width={"30px"}></img>
+            <b className="navLogo">SHARC</b>
+          </Typography>
+          {/* menu mobile */}
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "rigth",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {pages.map((page) => (
+                <Link to={page.href} key={page.name} className="textMenuMobile">
+                  {page.name}
+                </Link>
+              ))}
+            </Menu>
+          </Box>
 
           {/*logo menu mobile */}
-           <Typography
-             variant="h6"
-             noWrap
-             component="div"
-             sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-           >
-             <img src={Logo} alt='logo' width={'30px'}></img>
-             <b>SHARC</b>
-           </Typography>
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+          >
+            <img src={Logo} alt="logo" width={"30px"}></img>
+            <b className="navLogo">SHARC</b>
+          </Typography>
 
-           {/* texto menu desktop */}
-           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }} className='boxMenuDesktop'>
-             {pages.map((page) => (
-               <Link to={page.href}
-                 key={page.name}
-                 className='textMenuDesktop'
-               >
-                 {page.name}
-               </Link>
-             ))}
-           </Box>
+          {/* texto menu desktop */}
+          <Box
+            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+            className="boxMenuDesktop"
+          >
+            {pages.map((page) => (
+              <Link to={page.href} key={page.name} className="textMenuDesktop">
+                {page.name}
+              </Link>
+            ))}
+          </Box>
 
-           {/* <Box sx={{ flexGrow: 0 }}> */}
-              {/* <Tooltip title="Open settings">
+          {/* <Box sx={{ flexGrow: 0 }}> */}
+          {/* <Tooltip title="Open settings">
                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                  <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
                </IconButton>
              </Tooltip> */}
-             {/* <Menu
+          {/* <Menu
                sx={{ mt: '45px' }}
                id="menu-appbar"
                anchorEl={anchorElUser}
@@ -148,11 +144,11 @@ const Navbar = () => {
                  </MenuItem>
                ))}
              </Menu> */}
-           {/* </Box> */}
-         </Toolbar>
-       </Container>
-     </AppBar>
-   );
+          {/* </Box> */}
+        </Toolbar>
+      </Container>
+    </AppBar>
+  );
 };
 
 export default Navbar;

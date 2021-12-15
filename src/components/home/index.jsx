@@ -11,10 +11,10 @@ const Home = ()  => {
   const generador='Eres Generador de Residuos'
   const reciclador='Eres Reciclador'
   const acopio='Eres un Acopio-Integrador'
-  const textGenerador='Todos lo somos!!!, desesas deshacerte de ese viejo colchon, muebles....'
-  const textReciclador='Eres un duro y sabes como se debe aprovechar...'
-  const textAcopio='Tienes un lugar de acopio para los residuos...'
-  const inicioSesion='INICIAR SESION'
+  const textGenerador='Todos lo somos!!!, desesas deshacerte de ese viejo colchon, muebles, carton, plastico o vidrio, entonces este es tu lugar.'
+  const textReciclador='Eres un duro y sabes cómo se debe aprovechar los residuos reciclables y cual es su forma de disposición final? entonces este es tu lugar.'
+  const textAcopio='Tienes un lugar de acopio para los residuos reciclabes y/o incluso los procesos? Entonces este es tu lugar'
+  const inicioSesion='INICIAR SESIÓN'
   
   return (
     <div className="App">
