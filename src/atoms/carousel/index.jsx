@@ -1,24 +1,24 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import './carousel.css'
-import imgBanner1 from '../../images/Banner1.png'
-import imgBanner2 from '../../images/Banner2.png'
-import imgBanner3 from '../../images/Banner3.png'
+import imgBanner1 from '../../iconos e imagenes/Banner1.png'
+import imgBanner2 from '../../iconos e imagenes/Banner2.png'
+import imgBanner3 from '../../iconos e imagenes/Banner3.png'
 
-const Carousell =(props) =>{
+const Carousell =() =>{
     const items = [
         {
-            name: 'Aya Bouchiha',
+            name: 'imgBanner1',
             text: 'dddddddddddddddddddddddddddd',
             description: imgBanner1,
         },
         {
-            name: 'John Doe',
+            name: 'imgBanner2',
             text: 'dddddddddddddddddddddddddddd',
             description: imgBanner2
         },
         {
-            name: 'Pitsu Coma',
+            name: 'imgBaner3',
             text: 'dddddddddddddddddddddddddddd',
             description: imgBanner3,
         },
