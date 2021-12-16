@@ -15,6 +15,9 @@ const Home = ()  => {
   const textReciclador='Eres un duro y sabes cómo se debe aprovechar los residuos reciclables y cual es su forma de disposición final? entonces este es tu lugar.'
   const textAcopio='Tienes un lugar de acopio para los residuos reciclabes y/o incluso los procesos? Entonces este es tu lugar'
   const inicioSesion='INICIAR SESIÓN'
+  const sesionGenerador='/logingenerador'
+  const sesionRecolector='/'
+  const sesionReciclador='/loginreciclador'
   
   return (
     <div className="App">
@@ -24,19 +27,22 @@ const Home = ()  => {
         <div className='homeText'>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequatur excepturi quibusdam error ratione optio deleniti a eveniet reiciendis quisquam! Veniam iure consectetur quaerat impedit ipsa itaque unde magni consequuntur!</p>
         </div>
-        <div className='homeCards'>
+        <div className='homeCards' id='homeCards'>
           <CardGoSesion
           title={generador} 
           text={textGenerador}
-          textButton={inicioSesion} />
+          textButton={inicioSesion} 
+          sesion={sesionGenerador} />
           <CardGoSesion
           title={reciclador}
           text={textReciclador} 
-          textButton={inicioSesion}/>
+          textButton={inicioSesion}
+          sesion={sesionRecolector}/>
           <CardGoSesion
           title={acopio} 
           text={textAcopio} 
-          textButton={inicioSesion} />
+          textButton={inicioSesion}
+          sesion={sesionReciclador} />
         </div>
       </section>
       <BannerImg/>

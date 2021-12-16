@@ -1,8 +1,9 @@
 import React from 'react';
 import './cardGoSesion.css'
 // import Button from '@mui/material/Button';
+import {Link} from 'react-router-dom';
 
-const CardGoSesion =({title,text,textButton}) => {
+const CardGoSesion =({title,text,textButton,sesion}) => {
   return (
     <div className='cardGoSesion'>
       <div className='cardInfo'>
@@ -10,12 +11,11 @@ const CardGoSesion =({title,text,textButton}) => {
         <p>{text}</p>
       </div>
       <div className='cardButton' >
-        <input
-          href='www.google.com'
+        <Link
+          to={sesion}
           className='buttonSesion'
           type='button'
-          value={textButton}
-        />
+        >{textButton}</Link>
       </div>
     </div>
   );

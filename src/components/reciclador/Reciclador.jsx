@@ -1,4 +1,4 @@
-import React,{Fragment, useContext,useEffect} from 'react'
+import React,{useContext,useEffect} from 'react'
 import Header from '../../layout/Header';
 import '../../css/recicladores.css';
 import Cards from './Cards';
@@ -21,7 +21,7 @@ export default function Reciclador() {
         ls.map(item=>agregarProducto(item))
     },[])
     return (
-        <Fragment>
+        <section className='body'>
             <Header/>
             <main className='main container'>
                 {cards ? <Cards/> : <Informacion/>}
@@ -32,6 +32,6 @@ export default function Reciclador() {
                     <img src={hack7} alt="grupo7 logo"/>
                 </div>
             </footer>
-        </Fragment>
+        </section>
     )
 }

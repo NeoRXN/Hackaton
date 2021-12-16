@@ -4,9 +4,9 @@
     width: 100%;
     background-color: rgba(151, 149, 149, 0.253);
     margin-bottom: 1rem;
-    padding-left: 1rem;
     border-radius: 10px;
     box-shadow: 0 0 5px 1.5px grey;
+    padding: 15px;
 }
 
 .cardButton{
