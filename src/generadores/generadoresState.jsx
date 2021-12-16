@@ -9,7 +9,8 @@ import {
     OBTENER_PRODUCTOS,
     MOSTRAR_CARDS,
     SELECCIONAR_PRODUCTO,
-    REINICIAR_FORMULARIO
+    REINICIAR_FORMULARIO,
+    GUARDAR_USUARIOS
 } from '../types';
 
 // State de valores iniciales
@@ -21,7 +22,8 @@ const GeneradoresState = props => {
         actual: [],
         cards: true,
         seleccion: null,
-        reiniciar: false
+        reiniciar: false,
+        usuarios: []
     }
 
     //dispatch para ejecutar acciones
@@ -87,6 +89,14 @@ const GeneradoresState = props => {
         })
     }
 
+    //guardar usuario
+    const guardarUsuarios = usuario =>{
+        dispatch({
+            type:GUARDAR_USUARIOS,
+            payload:usuario
+        })
+    }
+
     return(
         <generadoresContext.Provider
             value={{
@@ -97,6 +107,7 @@ const GeneradoresState = props => {
                 cards: state.cards,
                 seleccion: state.seleccion,
                 reiniciar:state.reiniciar,
+                usuarios:state.usuarios,
                 //funciones
                 obtenerProductos,
                 agregarProducto,
@@ -104,7 +115,8 @@ const GeneradoresState = props => {
                 productoActual,
                 mostrarCards,
                 seleccionarProducto,
-                reiniciarFormulario
+                reiniciarFormulario,
+                guardarUsuarios
             }}
         >
             {props.children}
