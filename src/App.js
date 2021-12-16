@@ -15,12 +15,12 @@ function App() {
     <GeneradoresState>
         <Router>
           <Routes>
-            <Route path="logingenerador" element={<LoginGenerador/>}/>
-            <Route path="registrogenerador" element={<RegistroGenerador/>}/>
-            <Route path="loginreciclador" element={<LoginReciclador/>}/>
-            <Route path="registroreciclador" element={<RegistroReciclador/>}/>
-            <Route path="reciclador" element={<Reciclador/>}/>
-            <Route path="generador" element={<Generadores/>}/>
+            <Route path="/logingenerador" element={<LoginGenerador/>}/>
+            <Route path="/registrogenerador" element={<RegistroGenerador/>}/>
+            <Route path="/loginreciclador" element={<LoginReciclador/>}/>
+            <Route path="/registroreciclador" element={<RegistroReciclador/>}/>
+            <Route path="/reciclador" element={<Reciclador/>}/>
+            <Route path="/generador" element={<Generadores/>}/>
             <Route path="/" element={<Home/>} exact/>
             <Route path="/information" element={<Information/>}/>
           </Routes>
