@@ -1,12 +1,12 @@
 import React from 'react';
 import CardInformationL from '../../atoms/cardInformationL';
 import CardInformationR from '../../atoms/cardInformationR';
-import Clasificaciones from '../../images/Clasificacion.jpg'
-import Importancia from '../../images/Importanciareciclar.jpg'
-import Recoleccion from '../../images/Recoleccion.jpg'
-import Acopio from '../../images/Acopio.jpg'
-import Recuperacion from '../../images/Recuperacion.png'
-import Separacion from '../../images/Separacion.jpg'
+import Clasificaciones from '../../iconos e imagenes/Clasificacion.jpg'
+import Importancia from '../../iconos e imagenes/Importanciareciclar.jpg'
+import Recoleccion from '../../iconos e imagenes/Recoleccion.jpg'
+import Acopio from '../../iconos e imagenes/Acopio.jpg'
+import Recuperacion from '../../iconos e imagenes/Recuperacion.png'
+import Separacion from '../../iconos e imagenes/Separacion.jpg'
 
 const ContainerInformation = () => {
   const textInfo1='Reciclar es una de las alternativas utilizadas para la reducción del volumen de residuos sólidos. Se trata de un proceso que consiste básicamente en volver a utilizar materiales que fueron desechados y que aún son aptos para elaborar otros productos o refabricar los mismos. Ejemplos de materiales reciclables son los metales, el vidrio, el plástico y el papel.'

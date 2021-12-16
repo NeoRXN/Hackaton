@@ -4,13 +4,12 @@ import '../../css/recicladores.css';
 import Cards from './Cards';
 import Informacion from './Informacion';
 import generadoresContext from '../../generadores/generadoresContext'
-import hack7 from '../../iconos e imagenes/Hack7.png'
-
-
+import Title from '../../atoms/title';
+import CopyRight from '../../atoms/copyRight'
 
 export default function Reciclador() {
 
-
+    const pageTitle = 'Solicitudes Vigentes'
     //traer producto del state
     const contextGeneradores = useContext(generadoresContext);
     const{cards, agregarProducto} = contextGeneradores;
@@ -23,15 +22,11 @@ export default function Reciclador() {
     return (
         <section className='body'>
             <Header/>
+            <Title title={pageTitle} ></Title>
             <main className='main container'>
                 {cards ? <Cards/> : <Informacion/>}
             </main>
-            <footer className='Gfooter'>
-                <div className="Gcontenidofooter flex">
-                    <p>Todos los derechos reservados ©| diseñado y construido por </p>
-                    <img src={hack7} alt="grupo7 logo"/>
-                </div>
-            </footer>
+            <CopyRight id='display' />
         </section>
     )
 }

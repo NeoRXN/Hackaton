@@ -19,7 +19,7 @@ export default function Header() {
                 <div>
                     {/* <Link to={'/'}><button className="cerrarSesion">Volver al inicio</button></Link>
                     <Link to={'/'}><button className="cerrarSesion">Como reciclar</button></Link> */}
-                    <button className="cerrarSesion">cerrar sesión</button>
+                    <Link to={'/'} className="cerrarSesion">cerrar sesión</Link>
                 </div>
             </div>
         </header>  

@@ -1,0 +1,4 @@
+.legalFooter {
+    display: flex;
+    flex-direction: column;
+}
