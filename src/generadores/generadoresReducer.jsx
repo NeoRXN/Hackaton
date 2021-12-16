@@ -5,7 +5,8 @@ import {
     OBTENER_PRODUCTOS,
     MOSTRAR_CARDS,
     SELECCIONAR_PRODUCTO,
-    REINICIAR_FORMULARIO
+    REINICIAR_FORMULARIO,
+    GUARDAR_USUARIOS
 } from '../types';
 
 
@@ -46,6 +47,11 @@ const generadoresReducer = (state, action) => {
             return{
                 ...state,
                 reiniciar: action.payload
+            }
+        case GUARDAR_USUARIOS:
+            return{
+                ...state,
+                usuarios:[...state.usuarios, action.payload]
             }
 
         default:    
