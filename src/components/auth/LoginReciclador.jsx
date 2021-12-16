@@ -34,7 +34,8 @@ export default function LoginReciclador() {
         //obtener lista en localstorage
         useEffect(()=>{
             const ls = JSON.parse(localStorage.getItem('Usuarios'));
-            ls.map(item=>guardarUsuarios(item))
+            // eslint-disable-next-line no-unused-expressions
+            ls?ls.map(item=>guardarUsuarios(item)):null
         },[])
 
         //Comparando 
