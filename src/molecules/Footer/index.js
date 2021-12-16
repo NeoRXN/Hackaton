@@ -11,7 +11,7 @@ const Footer = () => {
     const cardLegal='Aspecto Legal'
 
     return (
-        <section className='homeFooter'>
+        <footer className='homeFooter'>
             <CardFooter
                 title={cardNetwork}>
                 {<BodyNetworkFooter />}
@@ -24,7 +24,7 @@ const Footer = () => {
                 title={cardLegal}>
                 {<BodyLegal />}
             </CardFooter>
-        </section>
+        </footer>
     )
 }
 

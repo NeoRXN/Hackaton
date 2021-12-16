@@ -18,6 +18,11 @@ const Home = ()  => {
   const sesionGenerador='/logingenerador'
   const sesionRecolector='/'
   const sesionReciclador='/loginreciclador'
+  const textoPrincipal = 'SHARC integra personas, comercios y empresas involucradas en la Gestión inteligente de residuos sólidos aprovechables con el fin de trabajar juntos en pro de alcanzar entornos saludables, empresas eficientes y ciudades sostenibles.'
+  const textoPrincipal1 = 'Llegamos hasta tu hogar para recoger tus residuos reciclables o de difícil disposición, no los tires a las calles ni fuentes de agua porque esto ocasiona daños al medio ambiente; recuerda, debemos cuidar el planeta.'
+  const textoPrincipal2 = 'Desarrollamos una labor social enfocada en el mejoramiento de las condiciones de trabajo de la población recicladora, mediante condiciones laborales dignas y con mayores ingresos económicos. Lo que para usted es basura, para ellos es  su fuente de sustento y calidad de vida.'
+  const textoPrincipal3 = 'Usted también puede contribuir a este propósito de mejorar el medio ambiente, Inicie sesión de acuerdo a su perfil.'
+  const textoPrincipal4 = 'Sea parte del cambio!.'
   
   return (
     <div className="App">
@@ -25,7 +30,15 @@ const Home = ()  => {
       <Carousell></Carousell>
       <section className='homeInfo'>
         <div className='homeText'>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequatur excepturi quibusdam error ratione optio deleniti a eveniet reiciendis quisquam! Veniam iure consectetur quaerat impedit ipsa itaque unde magni consequuntur!</p>
+          <p>{textoPrincipal} </p>   
+          <br/>     
+          <p>{textoPrincipal1} </p>   
+          <br/>     
+          <p>{textoPrincipal2} </p> 
+          <br/>     
+          <p>{textoPrincipal3} </p>
+          <br/>     
+          <p><b>{textoPrincipal4}</b> </p>        
         </div>
         <div className='homeCards' id='homeCards'>
           <CardGoSesion

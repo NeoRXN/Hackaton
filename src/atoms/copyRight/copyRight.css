@@ -4,5 +4,26 @@
     margin: 0;
     color: white ;
     padding: 15px;
-    
+}
+
+.containerCopy {
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040;
+}
+
+
+.imgCopy {
+    border-radius: 10px;
+}
+
+#display {
+    position: absolute;
+    bottom: 0;
+}
+
+#flex {
+    margin-top: 10px;
 }

@@ -7,14 +7,16 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-// import Avatar from '@mui/material/Avatar';
-import Button from "@mui/material/Button";
-// import Tooltip from '@mui/material/Tooltip';
-import MenuItem from "@mui/material/MenuItem";
-import Logo from "../../images/Sharc.png";
-import { Link } from "react-router-dom";
-
+import Logo from "../../iconos e imagenes/Sharc.png";
+import {Link} from "react-router-dom";
 import "./navbar.css";
+// for use de avatar
+// import Avatar from '@mui/material/Avatar';
+// import Button from "@mui/material/Button";
+// import Tooltip from '@mui/material/Tooltip';
+// import MenuItem from "@mui/material/MenuItem";
+
+
 
 const pages = [
   { name: "Home", href: "/#" },
