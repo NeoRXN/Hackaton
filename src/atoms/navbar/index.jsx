@@ -45,7 +45,7 @@ const Navbar = () => {
 
   return (
     <AppBar position="fixed">
-      <Container maxWidth="xl" className="homeNavbar">
+      <Container maxWidth="x2" className="homeNavbar">
         <Toolbar disableGutters>
           {/* logo desktop */}
           <Typography
